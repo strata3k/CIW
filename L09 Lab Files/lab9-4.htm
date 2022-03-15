@@ -24,6 +24,23 @@
             alert(div.id);  
             alert(div.special_attribute);   
          }   
+         function RemoveValues() {
+             if (div == null) {
+                 div = document.getElementById("SetDiv");
+             }
+             var d = document.getElementById("SetDiv");
+             d.removeAttribute("title");
+             alert(div.title);
+             ChangevaluesBack();
+         }
+         function ChangeValuesBack() {
+             if (div == null) {
+                 div = document.getElementById("SetDiv");
+             }
+             var d = document.getElementById("SetDiv");
+             d.setAttribute("title", "div2");
+             alert(div.title);
+         }
     </script>
 </body>
 </html>
