@@ -5,7 +5,7 @@
 <title>Lab 9-1</title>
 
 <script type="text/javascript">
-<!--
+
 function changeButton()
 {
   if(document.getElementById('radiobuttonWebdev').checked === true)
@@ -20,9 +20,15 @@ function changeButton()
 	var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "Uncle Sam!";
 	alert("Hello " + header);
   }
+  if(document.getElementById('radiobuttonYouTuber').checked === true)
+  {
+  radioButton = document.getElementById('radiobuttonYouTuber').value;
+  var header = document.getElementById('radiobuttonWebdev').value.innerHTML = "YouTuber!";
+  alert("Hello " + header);
+  }
   getTest();
 }
--->
+
 </script>
 </head>
 
@@ -33,13 +39,13 @@ function changeButton()
 <p>Please select your favorite type of Web site:</p>
 <input id="radiobuttonWebdev" type="radio" name="group1" value="Web_Development" checked>Web Development</input><br />
 <input id="radiobuttonGovernment" type="radio" name="group1" value="Government">U.S. Government</input><br />
-<input id="a" type="radio" name="group1" value="A">A</input><br />
+<input id="radiobuttonYouTuber" type="radio" name="group1" value="YouTuber">YouTuber</input><br />
 <input id="b" type="radio" name="group1" value="B">B</input><br />
 <input id="c" type="radio" name="group1" value="C">C</input><br />
 
 
 <script type="text/javascript">
-<!--
+
 function getTest()
 {
   document.write("<h3>CIW JavaScript Specialist</h3>");
@@ -54,8 +60,12 @@ function getTest()
   {
 	document.write("<p>Here's a great site if you're interested in U.S. government:</p><a href=http://www.whitehouse.gov/>The White House</a>");
   }
+  if(radioButton == "YouTuber")
+  {
+  document.write("<p>Here's a great site if you're interested in being a YouTuber:</p><a href=https://www.youtube.com/c/pokimane/>The Queen</a>")
+  }
 }
--->
+
 </script>
 
 <p>
